@@ -1,26 +1,29 @@
-
-##include <stdio.h>
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * main -  program that prints all the numbers of base 16 in lowercase
- * You can only use the putchar function
+ * main - main block
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
  * Return: 0
  */
-
 int main(void)
 {
-int n = 48;
-int l = 'a';
-while (n <= 57)
-{
-putchar(n);
-n += 1;
-}
-while (l <= 'f')
-{
-putchar(l);
-l++;
-}
-putchar('\n');
-return (0);
+	char d = '0';
+
+	while (d <= '9')
+	{
+		putchar(d);
+		d++;
+	}
+
+	char c = 'a';
+
+	while (c <= 'f')
+	{
+		putchar(c);
+		c++;
+	}
+
+	putchar('\n');
+	return (0);
 }
